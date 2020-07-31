@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey!</title>
+</head>
+<style>
+    html {
+        background-color: #E4E9FD;
+        background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+        min-height: 1000px;
+        font-family: 'helvetica neue';
+
+    }
+</style>
+
+<body style="margin-top: 0;">
+    <h1 style="text-align: center;margin-top: 50px;">
+        Food Survey
+    </h1>
+    <div>
+        <form action="exercise5.html" style=" margin-top: 50px;">
+            <div>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="">Name : </label>
+                    <input type="text" value="" required><br><br>
+                    <label for="">Address</label>
+                    <input type="text" placeholder=""><br><br>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" required><br><br>
+                    <label for="">Date Of Birth </label>
+                    <input type="date" name="D.O.B" value=""><br><br>
+                    <label for="">age</label>
+                    <input type="number" name="Age" id="" placeholder="18<=age<=50" maxlength="50"
+                        minlength="18"><br><br>
+                    <label for="">Enter Your Contact No. </label>
+                    <input list="mobNo" name="mobilenum" id="mobilenum" placeholder="length should be 10"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" minlength="10">
+                    <small>Format : 123-456-7890</small><br><br>
+                    <datalist id="mobNo">
+                        <option value="8218439636">
+                        <option value="6165465464">
+                        <option value="6516546546">
+                        <option value="3213165166">
+                        <option value="6546465651">
+                        <option value="7498721654">
+                    </datalist>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>
+                        General Details
+                    </legend>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            How Many Pieces of fruit do you eat per day
+                        </legend>
+                        <label for="0">0</label>
+                        <input type="radio" name="fruits" /><br><br>
+                        <label for="1">1</label>
+                        <input type="radio" name="fruits"><br><br>
+                        <label for="2">2</label>
+                        <input type="radio" name="fruits"><br><br>
+                        <label for="more than 2">More than 2</label>
+                        <input type="radio" name="fruits"><br><br>
+                    </fieldset><br><br>
+                    <label>My Favourite fruit</label>
+                    <select id="myList" required size="2">
+                        <option value="1">Apple</option>
+                        <option value="2">Grapes</option>
+                        <option value="3">Orange</option>
+                        <option value="4">banana</option>
+                        <option value="5">pomegranate</option>
+                        <option value="6">peach</option>
+                        <option value="7">mango</option>
+                        <option value="8">guava</option>
+                        <option value="9">lichi</option>
+                        <option value="10">Strawberry</option>
+                    </select><br><br>
+                    <label for="">Google Search </label>
+                    <input type="search" name="" id="" placeholder="search Something">
+                    <input type="submit" value="submit">
+                    <br><br>
+
+                    <label for="">Would you like a brochure</label>
+                    <input type="checkbox" required checked><br><br>
+                    <input type="image" src="https://www.w3schools.com/tags/submit.gif" alt="Submit" width="48"
+                        height="48">
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
