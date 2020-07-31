@@ -1,0 +1,36 @@
+tr:nth-child(odd){
+    background-color: #b3edcf;
+}
+tr:nth-child(even){
+    background-color: #e0f0e9;
+}
+td:hover{
+    background-color: yellow;
+}
+.table1{
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 50px;
+}
+.a{
+padding : 150px 20px 0 80px;
+}
+.b{
+    padding : 150px 80px 0 0;
+}
+.c{
+padding : 0 20px 150px 80px;
+}
+.d{
+padding: 0 80px 150px 0;
+}
+.around{
+    border-color: red;
+    width:0;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.center{
+    margin-left:auto; 
+    margin-right:auto;
+}
