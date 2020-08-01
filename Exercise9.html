@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work</title>
+</head>
+<style>
+    html {
+        background-color: #E4E9FD;
+        background-image: -webkit-linear-gradient(65deg, #b83b5e 50%, #f08a5d 50%);
+        min-height: 1000px;
+        font-family: 'helvetica neue';
+    }
+</style>
+
+<body>
+    <h2 align="center">
+        Table within Table
+    </h2>
+    <hr>
+    <table border="1" align="center">
+        <tr>
+            <th>Hearder1</th>
+            <th>Hearder2</th>
+            <th>Hearder3</th>
+            <th>Hearder4</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">
+                <h4 align="center">Table 1</h4>
+                <table border="1" align="center">
+                    <tr>
+                        <th>3</th>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>C</td>
+                    </tr>
+                </table>
+            </td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>
+                <h4 align="center">Table 2</h4>
+                <table border="1" align="center">
+                    <tr>
+                        <th>7</th>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </td>
+            <td>9</td>
+            <td rowspan="2">10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td colspan="4">14</td>
+        </tr>
+    </table>
+</body>
+
+</html>
