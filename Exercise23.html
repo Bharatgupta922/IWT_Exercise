@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        background-color: #E4E9FD;
+        background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+        min-height: 1000px;
+        font-family: 'helvetica neue';
+    }
+</style>
+
+
+<body>
+    <form action="/" method="post">
+
+        <fieldset>
+            <legend>Name</legend>
+            <label for="">Firstname</label>
+            <input type="text" name="first" required>
+            <label for="">Last name</label>
+            <input type="text" name="last" id="">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="">
+            <label for="">Male</label>
+            <input type="radio" name="gender" id="">
+            <label for="">female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="hobby" id="">
+            <label for="">Soccer</label>
+            <input type="checkbox" name="hobby" id="">
+            <label for="">Cricket</label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="">Email</label>
+            <input type="email" name="email" id="">
+            <label for="">Phone Numer</label>
+            <input type="tel" name="mob" id="">
+        </fieldset>
+
+        <fieldset>
+            <legend>Pattern
+            </legend>
+            <input type="text" name="pattern" id=""
+                pattern="(?=.*\d).{2,}('@','!','#','$','%','^','&','*','~','`').{2,}(?=.*[a-z]).{2,}(?=.*[A-Z]).{1,}">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
