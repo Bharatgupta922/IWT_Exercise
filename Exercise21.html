@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    H1 {
+        background-color: aqua;
+    }
+
+    a {
+        text-decoration: none;
+        color: aqua;
+    }
+
+    table {
+        background-color: pink;
+    }
+
+    .under {
+        padding: 20px;
+        border: dotted green;
+    }
+
+    .over {
+        padding: 20px;
+        border: red solid;
+    }
+
+    p {
+        display: inline;
+    }
+</style>
+<script>
+    function func() {
+        document.getElementById(".check").style.color = "red";
+    }
+</script>
+
+<body>
+    <div class="over">
+        <div class="under">
+            <form action="/" method="POST">
+                <h1>LOGIN TO CHITKARA UNIVERSITY</h1>
+                <br>
+                <p>Please fill your information </p>
+                <p class="a">For More information <a href="www.github.com">Click Here</a> </p>
+                <table>
+                    <div class="tble">
+                        <tr>
+                            <td> <label for="">*visit no:</label> </td>
+                            <td> <input type="text" value="1" maxlength="1" readonly width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>*Name</td>
+                            <td> <input type="text" maxlength="10" width="200" placeholder="Enter Your Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">*Age</label> </td>
+                            <td> <input type="text" max="50" min="18" required placeholder="18"></td>
+
+                        </tr>
+                        <tr>
+                            <td>login as</td>
+                            <td>
+                                <select name="" id="" size="1" required>
+                                    <option value="1" style="color: orange;">student</option>
+                                    <option value="2" style="color: orange;">Teachers</option>
+                                    <option value="3" style="color: orange;">Others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">*How likely is that you would recommend <br> CHITKARA to a friend </label>
+                            </td>
+                            <td> <input type="checkbox" name="op" class="check" onclick="func()"> <label for=""
+                                    class="check">Definitely</label> <br>
+                                <input type="checkbox" name="op" class="check"> <label for="" class="check">
+                                    Maybe</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <input type="submit" value="SUBMIT"
+                                    style="background-color: yellow; width: 750px;">
+                            </td>
+                        </tr>
+                    </div>
+
+                </table>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
