@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="list">
+        <li>first</li>
+        <li>sec</li>
+        <li>third</li>
+    </ul>
+    <hr>
+    <p id="output">
+    </p>
+</body>
+<script>
+    var op = "";
+    var s = document.querySelector("list").childNodes;
+    for (var i = 0; i < s.length; ++i) {
+        op += s[i].nodeName + " ";
+    }
+    document.getElementById("output").innerHTML = op;
+</script>
+
+</html>
