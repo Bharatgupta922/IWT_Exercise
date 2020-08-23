@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <button onclick="func()">click</button>
+    <p id="op"></p>
+    <ul id="mylist1"></ul>
+
+    <script>
+        //function func() {
+        //  var child1 = document.getElementById("myList").lastChild.innerHTML;
+        //  var child2 = document.getElementById("myList").firstChild.innerHTML;
+        //  document.getElementById("op").innerHTML = child1 + " " + child2;
+        //}
+        function func() {
+            var child1 = document.getElementById("myList").firstChild.innerHTML; document.getElementById("myList").firstChild.remove();
+            var node = document.createElement("li");
+            var textnode = document.createTextNode(child1);
+            node.appendChild(textnode);
+            document.getElementById("mylist1").appendChild(node);
+        }
+    </script>
+
+</body>
+
+</html>
