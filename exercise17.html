@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    button:hover {
+        border: 3px solid green;
+    }
+
+    .a:hover {
+        background-color: skyblue;
+    }
+
+    table {
+        border-spacing: 15px;
+    }
+
+    button {
+        background-color: yellow;
+    }
+
+    input:hover {
+        border: 1px solid yellow;
+    }
+
+    select:hover {
+        border: 1px solid skyblue;
+    }
+</style>
+
+<body style="background-color: pink;">
+    <form action="https://www.linkedin.com/in/bharat-gupta-5a8605169/" method="POST">
+        <div>
+            <h2 style="background-color: blue;">Survey Form</h2>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname"><sup>*</sup>Name</label>
+                </td>
+                <td>
+                    <input required type="text" name="fname" placeholder="Enter your name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="femail"><sup>*</sup>Email</label>
+                </td>
+                <td>
+                    <input required type="email" name="femail" placeholder="Enter your Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fage"><sup>*</sup>Age</label>
+                </td>
+                <td>
+                    <input required type="number" name="fage" placeholder="18">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fopt">Which option best describe your current role </label>
+                </td>
+                <td>
+                    <select id="role" name="fopt">
+                        <option value="Student">Student</option>
+                        <option value="Employee" class="a">Employee</option>
+                        <option value="Businessman" class="a">Buinessman</option>
+                        <option value="CA" class="a">CA</option>
+                        <option value="Accountant" class="a">Accountant</option>
+                        <option value="Teacher" class="a">Teacher</option>
+                        <option value="Doctor" class="a">Doctor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="frecomm"><sup>*</sup>How likely is that you would recommend Code Chef workshop to a
+                        friend?</label>
+                </td>
+                <td>
+                    <input required type="checkbox" name="frecomm">
+                    <label for="frecomm">Definitely</label>
+                    <input required type="checkbox" name="frecomm">
+                    <label for="frecomm">Maybe</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="flike">What do uou like most in Code Chef Workshop : </label>
+                </td>
+                <td>
+                    <select id="role" name="flike">
+                        <option value="opt" style="background-color: aqua;">Select an option</option>
+                        <option value="content">Content</option>
+                        <option value="Teaching skill">Teaching skill</option>
+                        <option value="Shortcuts">Shortcuts</option>
+                        <option value="Teacher's experience">Teacher's Experience</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fimproved">Things that should be improved in the future<br>(Check all that
+                        apply):</label>
+                </td>
+                <td>
+                    <input required type="checkbox" name="fimproved">
+                    <label for="frecomm">Front-end/Back-end projects</label><br>
+                    <input required type="checkbox" name="fimproved">
+                    <label for="frecomm">Data visualization</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
